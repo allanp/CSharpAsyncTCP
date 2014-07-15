@@ -115,7 +115,7 @@ namespace Communication
         public bool ShutdownOne(EndPoint endPoint)
         {
             if (endPoint == null)
-                throw new ArgumentNullException();
+                throw new ArgumentNullException("endPoint");
             if (this.Connections == null || this.Connections.Count == 0)
                 return false;
 
